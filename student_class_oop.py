@@ -7,7 +7,7 @@ class Student:
         self.subjects[subject] = score
 
     def to_dictionary(self):
-        # JSON cannot store objects → convert to pure data
+        # JSON cannot store objects  convert to pure data
         return {
             "name": self.name,
             "subjects": self.subjects
@@ -19,3 +19,4 @@ class Student:
         student = cls(data["name"])
         student.subjects = data["subjects"]
         return student
+
